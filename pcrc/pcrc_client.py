@@ -309,6 +309,8 @@ class PcrcClient:
 		self.__connection_state = ConnectionState.connected
 		self.retry_counter.reset_counter()
 		self.chat(self.tr('chat.game_join'))
+		for cmd in self.config.get('login-command'):
+			self.chat(cmd)
 
 	def on_disconnect_packet(self, packet):
 		self.logger.info('PCRC disconnected from the server, reason = {}'.format(packet.json_data))

@@ -128,6 +128,8 @@ PCRC 目前支持连接官服原版 Minecraft 服务端，支持以下版本：
 
 ### PCRC 设置
 
+`login-command`: 在加入时给服务器发送的信息列表，对有特殊游戏内登录的服务器有帮助。默认值: `[]`
+
 `file_size_limit_mb`: `.tmcpr` 文件的大小限制。每当达到这个限制时 PCRC 将会重启，单位: MB。默认值: `2048`
 
 `file_buffer_size_mb`: 文件缓冲区的大小限制。每当达到这个限制时 PCRC 将会将缓冲区的内容输出至 `.tmcpr` 文件，单位: MB。默认值: `8`

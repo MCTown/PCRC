@@ -128,6 +128,8 @@ Examples for those account related config entries:
 
 ### PCRC Control
 
+`login-command`: A list of messages to send to the server when joined. Useful for servers with custom in-game login methods. Default: `[]`
+
 `file_size_limit_mb`: The limit of size of the `.tmcpr` file. Every time it is reached, PCRC will restart. Default: `2048`
 
 `file_buffer_size_mb`: The limit of size of file buffer. Every time it is reached, PCRC will flush all content in the buffer into `.tmcpr` file. Default: `8`

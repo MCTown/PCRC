@@ -4,6 +4,7 @@
 
 # IDE
 /.idea
+/.vscode
 
 # PCRC outputs
 /config.json
